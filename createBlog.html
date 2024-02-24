@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sunset">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">BLOG-APP</a>
+        </div>
+        <div class="flex-none">
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component"
+                            src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    </div>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a id="logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-full w-10/12 m-auto ">
+        <div>
+            <h1 class="underline text-2xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">Create Blog OR Ask Question
+            </h1>
+            <br>
+            <p>Note: Please fill all the fields</p>
+        </div>
+        <div class="w-full mt-2 sm:flex mt-8">
+            <div class="w-6/12">
+                <p class="text-lg font-bold sm:text-xl">Title</p>
+                <input class="rounded-md w-full mt-2 sm:w-60 md:w-80 lg:w-96 " type="text" value="" id="input_title" placeholder=" Enter Title" required>
+
+            </div>
+            <div class="w-6/12 mt-2 sm:mt-0">
+                <p class="text-lg font-bold sm:text-xl">Select Category</p>
+                <div>
+                    <select class="rounded-md w-full mt-2 sm:w-60 md:w-80 lg:w-96" name="Select Category" id="select_cat" required>
+                        <option value="Select Category">Select Category</option>
+                        <option value="JavaScript" id="option_js">JavaScript</option>
+                        <option value="HTML" id="option_html">HTML</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="sm:flex">
+            <div class="w-6/12" id="select_type">
+                <p class="text-lg font-bold sm:text-xl mt-20 sm:mt-20">Select Type</p>
+                <input type="radio" name="blog" id="blog" required value="blog"><label class="mr-3 font-bold text-xl" > Blog</label>
+
+                <input type="radio" name="blog" id="quest" required value="question"><label class="mr-3 font-bold text-xl" > Question</label>
+
+            </div>
+            <div class="w-6/12" id="select_status">
+                <p class="text-lg font-bold sm:text-xl mt-5 sm:mt-20">Select Type</p>
+                <input type="radio" name="status" required id="active" value="active"><label class="mr-3 font-bold text-xl"> Active</label>
+
+                <input type="radio" name="status" required id="non_active" value="non-active"><label class="mr-3 font-bold text-xl"> Non-Active</label>
+            </div>
+        </div>
+        <div class="mt-10">
+            <input
+              accept="image/*"
+              type="file"
+              id="fileInput"
+              class="file-input file-input-bordered w-full max-w-xs"
+              required
+            />
+      
+          </div>
+          <div class=" mt-2 btn border-2 border-amber-300" id="uploadImgBtn">
+            Press To Upload
+        </div>
+
+        <div class="mt-6 ">
+            <textarea class="w-12/12 relative rounded-md sm:left-4 lg:left-12 w-11/12 " name="" id="description" cols="70" rows="10" placeholder=" Description..." required></textarea>
+
+        </div>
+        <div class="mt-2">
+            <p class="btn relative text-center border-amber-300 sm:left-4  lg:left-12" id="save_btn">Save</p>
+            <p class="btn relative text-center border-amber-300 sm:left-4  lg:left-12" id="cancel_btn">Cancel</p>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="createBlog.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sunset">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body >
+    <div class="navbar bg-base-100">
+        <a class="btn btn-ghost text-xl">BLOG-APP</a>
+      </div>
+    <div class="bg-amber-300 my-24 mx-auto w-96 h-96 rounded-md">
+        <div class="pt-12">
+            <div class="pl-16 w-80 ">
+                <p id="for-error" class="text-red-600 font-thin text-xs h-4"></p>
+                <h3 class="mb-0.5 ">Name</h3>
+                <input class="mb-4 w-60" type="text" placeholder=" Enter Your Name">
+                <h3 class="mb-0.5"  >Email</h3>
+                <input class="mb-4 w-60" id="email1" type="email" placeholder=" Enter Your Email">
+                <h3>Password</h3>
+                <input class="mb-4 w-60" type="password" name="" id="password1" placeholder=" Enter Password" >
+                <br>
+                <p id="tologin" class="btn text-sm text-black underline bg-transparent border-0 hover:bg-amber-100">Already have an account?LogIn </p>
+                <br>
+                <button
+                    class="mt-4 bg-black hover:bg-amber-400 text-white w-60 text-center rounded-md h-8 " id="signup">SignUp</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="signup.js" type="module"></script>   
+</body>
+
+</html>
