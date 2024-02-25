@@ -205,18 +205,18 @@ const create_cmnts=(comment,a_name)=>{
   parent.classList.add('h-full', 'w-10/12', 'm-auto', 't-3')
 
 let child6=document.createElement('div')
-child6.classList.add('avatar','flex' ,'mt-8')
+child6.classList.add('avatar','flex' ,'mt-8','h-9)
 
 let child6_1=document.createElement('div')
 let img_tag=document.createElement('img')
 img_tag.src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-child6_1.classList.add("w-10", "h-10", 'rounded-full' ,'ring','ring-primary' ,'ring-offset-base-100' ,'ring-offset-2')
+child6_1.classList.add("w-7", "h-7", 'rounded-full' ,'ring','ring-primary' ,'ring-offset-base-100' ,'ring-offset-2')
 child6_1.appendChild(img_tag)
 
 let child6_2=document.createElement('div')
 let auth_name=document.createElement('h1')
 auth_name.innerText=a_name
-child6_2.classList.add('ml-6','font-bold')
+child6_2.classList.add('ml-6','font-bold','w-full)
 child6_2.appendChild(auth_name)
 
 let child7=document.createElement('div')
