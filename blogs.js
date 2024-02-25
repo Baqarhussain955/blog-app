@@ -205,7 +205,7 @@ const create_cmnts=(comment,a_name)=>{
   parent.classList.add('h-full', 'w-10/12', 'm-auto', 't-3')
 
 let child6=document.createElement('div')
-child6.classList.add('avatar','flex' ,'mt-8','h-9)
+child6.classList.add('avatar','flex' ,'mt-8','h-9')
 
 let child6_1=document.createElement('div')
 let img_tag=document.createElement('img')
@@ -216,7 +216,7 @@ child6_1.appendChild(img_tag)
 let child6_2=document.createElement('div')
 let auth_name=document.createElement('h1')
 auth_name.innerText=a_name
-child6_2.classList.add('ml-6','font-bold','w-full)
+child6_2.classList.add('ml-6','font-bold','w-full')
 child6_2.appendChild(auth_name)
 
 let child7=document.createElement('div')
