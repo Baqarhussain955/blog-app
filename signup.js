@@ -36,8 +36,8 @@ const signp = () => {
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
-            window.location.href='login.html'
             console.log(user);
+            window.location.href = "login.html"
         })
         .catch((error) => {
             const errorCode = error.code;
